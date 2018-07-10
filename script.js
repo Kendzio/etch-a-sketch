@@ -48,7 +48,7 @@ createGrid();
 let reset = document.getElementById('reset');
 
 
-reset.addEventListener("click", function(){
+reset.addEventListener("click" || "touchstart" || "touchmove", function(){
 	let numElementsInOneAxis = prompt("What size (NumXnum)? Enter num:");
 	numElementsInOneAxis = parseInt(numElementsInOneAxis);
 	if (isNaN(numElementsInOneAxis)){
